@@ -24,7 +24,7 @@
 }
 
 *::selection {
-    background-color: var(--lightgreen);
+    background-color: #474E68;
     color: var(--white);
 }
 
