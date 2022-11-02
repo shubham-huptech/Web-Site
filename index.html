@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <!-- Load Require CSS -->
+    <!-- <link rel="stylesheet" href="Bootstrap/bootstrap.min.css"> -->
+    <!-- FONTAWESOME LINK -->
+    <script src="https://kit.fontawesome.com/f525e683bf.js" crossorigin="anonymous"></script>
+    <!-- GOOGLE FONT ADD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CUSTOM STYLE SHEETS CSS FILE  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+
+    <header>
+        <a href="#" class="logo-anchor"><img class="logo" src="Icons/Logo_1.png" alt=""></a>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class=" fas fa-bars "> </i>
+            </label>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <a href="https://www.google.co.in/" target="_blank"><img class="icons" src="Icons/search.png" alt=""></a>
+            <a href="#"><img class="icons" src="Icons/cart.png" alt=""></a>
+            <a href="#"><img class="icons" src="Icons/profile.png" alt=""></a>
+        </div>
+    </header>
+
+    <!-- HEADER END -->
+
+    <!-- HOME SECTION START -->
+    <section class="home">
+        <div class="content">
+            <h3 id="head">Exclusive Deals of <br> Furniture Collection</h3>
+            <p id="deal">Explore different categories. Find the best deals.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <!-- HOME SECTION END -->
+
+    <!-- EXPLORE BY  START -->
+    <section class="explore-category">
+        <h1 class="heading">Explore by Category</h1>
+        <div class="box-container">
+            <div class="left-box">
+                <div class="search-icon-center">
+                    <div class="search-icon">
+                        <input type="text" placeholder=" Search">
+                        <img class="search" src="Icons/search_icon.png" alt="">
+                    </div>
+                </div>
+                <input type="checkbox" id="showhide">
+                <label for="showhide" class="checkbtnshowhide">
+                    <i class=" fas fa-bars "> </i>
+                </label>
+                <ul class="exploration">
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dinning Room</a></li>
+                    <li><a href="#">Meeting Room</a></li>
+                    <li><a href="#">Workspace</a></li>
+                    <li><a href="#">Living Room</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Living Space</a></li>
+                </ul>
+                <div class="category-btn">
+                    <a href="#" class="categoryBtn">All Categories &ThickSpace; <img src="Icons/white_arrow.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="grid-container">
+                    <div class="items">
+                        <img class="grid-img" src="Images/bedroom.jpg" alt="">
+                        <div class="bedroom">Bedroom</div>
+                        <button class="explore">Explore</button>
+                    </div>
+                    <div class="items">
+                        <img class="grid-img" src="Images/diningroom.jpg" alt="">
+                        <div class="bedroom">Dinning Room</div>
+                        <button class="explore">Explore</button>
+                    </div>
+                    <div class="items">
+                        <img class="grid-img" src="Images/workspace.jpg" alt="">
+                        <div class="bedroom">Workspace</div>
+                        <button class="explore">Explore</button>
+                    </div>
+                    <div class="items">
+                        <img class="grid-img" src="Images/livingroom.jpg" alt="">
+                        <div class="bedroom">Living Room</div>
+                        <button class="explore">Explore</button>
+                    </div>
+                    <div class="items">
+                        <img class="grid-img" src="Images/kitchen.jpg" alt="">
+                        <div class="bedroom">Kitchen</div>
+                        <button class="explore">Explore</button>
+                    </div>
+                    <div class="items">
+                        <img class="grid-img" src="Images/livingspace.jpg" alt="">
+                        <div class="bedroom">Living Space</div>
+                        <button class="explore">Explore</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPLORE BY  END -->
+
+    <!-- POPULAR PRODUCTS START -->
+
+    <section class="popular-products">
+        <h1 class="heading">Popular Products</h1>
+
+        <div class="box-container owl-carousel owl-theme" id="popular-products">
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/chair.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Armchair</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;145 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/premiun_sofa.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Premium Sofa</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;250 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/minimal_sofa.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Minimal Sofa</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;200 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/dining_chair.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Dining Chair</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;100 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/chair.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Armchair</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;145 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/premiun_sofa.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Premium Sofa</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;250 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/minimal_sofa.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Minimal Sofa</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;200 </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="pic">
+                    <img src="Images/dining_chair.jpg" alt="">
+                </div>
+                <div class="details">
+                    <h4 class="name">Dining Chair</h4>
+                    <p class="des">Light Single Chair</p>
+                    <p class="price"> &#36;100 </p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow">
+            <div class="icon">
+                <button class="first" type="button"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="second"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="centerBtn">
+            <a href="#" class="btn">Explore all items &ThickSpace; <img src="Icons/white_arrow.png" alt=""> </a>
+        </div>
+    </section>
+
+    <!-- POPULAR PRODUCTS END -->
+
+    <!-- SPECIAL PAKAGE START -->
+
+    <section class="special-package">
+        <h1 class="heading">Special Package</h1>
+        <div class="box-container">
+            <div class="left-box">
+                <div class="img-container">
+                    <img class="package-image" src="Images/furniture2.jpg" alt="">
+                    <button class="expand"><img src="Icons/Vector_expand.png" alt=""></button>
+                </div>
+                <div class="larkin-wood hideontab">
+                    <h3 class="title">Larkin Wood Full Set</h3>
+                    <div class="star-flex">
+                        <div class="star-img">
+                            <img src="Icons/5star.png" alt="">
+                        </div>
+                        <div class="centerBtn">
+                            <a href="#" class="btn">Add to cart &ThickSpace; </a>
+                            <img src="Icons/cart_vector.png" alt="">
+                        </div>
+                    </div>
+                    <p class="price"> $729.99 </p>
+                </div>
+            </div>
+            <div class="right-box">
+                <div class="larkin-wood hideonphone hideondesktop""> 
+                    <h3 class=" title">Larkin Wood Full Set</h3>
+                    <div class="star-flex">
+                        <div class="star-img">
+                            <img src="Icons/5star.png" alt="">
+                        </div>
+                        <div class="centerBtn">
+                            <a href="#" class="btn">Add to cart &ThickSpace; </a>
+                            <img src="Icons/cart_vector.png" alt="">
+                        </div>
+                    </div>
+                    <p class="price"> $729.99 </p>
+                </div>
+                <div class="data">
+                    <h4 class="title">Description</h4>
+                    <p class="des">Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor
+                        space, this cast Aluminum Chaise Lounge combines the appearance, function and quality all
+                        together,
+                        offering you with the best experience.</p>
+                    <a href="" class="see-more">See More <img src="Icons/Vector_down.png" alt=""></a>
+                </div>
+
+                <div class="special-grid hideonphone hideontab">
+                    <div class="grid-item">
+                        <img class="furniture-img" src="Images/living_room_1.jpg" alt="">
+                    </div>
+
+                    <div class="grid-item first">
+                        <div class="grid-flex">
+                            <h1 class="grid-title">Living Room Family Set</h1>
+                            <p class="grid-price">$229.99</p>
+                        </div>
+                        <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                        <br>
+                        <a href="" class="grid-details">See Details</a>
+                        <div class="search-container">
+                            <button class="expand"><a href="#"><img src="Icons/white_search_icon.png"
+                                        alt=""></a></button>
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <img class="furniture-img" src="Images/living_room_2.jpg" alt="">
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="grid-flex">
+                            <h1 class="grid-new-title">Living Room Special Set</h1>
+                            <p class="grid-price">$329.99</p>
+                        </div>
+                        <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                        <p class="grid-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="see-more">See More <img src="Icons/green_down.png" alt=""></a>
+                    </div>
+
+                    <div class="grid-item">
+                        <img class="furniture-img" src="Images/living_room_3.jpg" alt="">
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="grid-flex">
+                            <h1 class="grid-new-title">Living Room Special Set</h1>
+                            <p class="grid-price">$587.99</p>
+                        </div>
+                        <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                        <p class="grid-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="" class="see-more">See More <img src="Icons/green_down.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #TABLET PURPOSE START-->
+        <div class="special-grid hideonphone hideondesktop">
+            <div class="grid-item">
+                <img class="furniture-img" src="Images/living_room_1.jpg" alt="">
+            </div>
+
+            <div class="grid-item first">
+                <div class="grid-flex">
+                    <h1 class="grid-title">Living Room Family Set</h1>
+                    <p class="grid-price">$229.99</p>
+                </div>
+                <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                <br>
+                <a href="" class="grid-details">See Details</a>
+                <div class="search-container">
+                    <button class="expand"><a href="#"><img src="Icons/white_search_icon.png" alt=""></a></button>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img class="furniture-img" src="Images/living_room_2.jpg" alt="">
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-flex">
+                    <h1 class="grid-new-title">Living Room Special Set</h1>
+                    <p class="grid-price">$329.99</p>
+                </div>
+                <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                <p class="grid-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="see-more">See More <img src="Icons/green_down.png" alt=""></a>
+            </div>
+
+            <div class="grid-item">
+                <img class="furniture-img" src="Images/living_room_3.jpg" alt="">
+            </div>
+
+            <div class="grid-item">
+                <div class="grid-flex">
+                    <h1 class="grid-new-title">Living Room Special Set</h1>
+                    <p class="grid-price">$587.99</p>
+                </div>
+                <img class="grid-item-star-img" src="Icons/5star.png" alt="">
+                <p class="grid-des">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="" class="see-more">See More <img src="Icons/green_down.png" alt=""></a>
+            </div>
+        </div>
+        <!-- #TABLET PURPOSE END-->
+    </section>
+
+    <div class="up-flex-container">
+        <div class="flex-container">
+            <div class="fixed-box">
+                <div class="flex-child">
+                    <h1 class="title">Our <br> Own Creation</h1>
+                    <p class="des">Designed in our studio</p>
+                    <p class="more">More</p>
+                    <div class="icon">
+                        <button class="first btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="second btn"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-scroll owl-carousel owl-theme" id="explore">
+                <div class="box">
+                    <img src="Images/design1.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+                <div class="box">
+                    <img src="Images/design2.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+                <div class="box">
+                    <img src="Images/design3.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+                <div class="box">
+                    <img src="Images/design4.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+                <div class="box">
+                    <img src="Images/design5.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+                <div class="box">
+                    <img src="Images/design6.jpg" alt="">
+                    <button class="explore">Explore Rooms</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SPECIAL PAKAGE END -->
+
+    <!-- BENIFITS FOR YOUR EXPEDIENCY START -->
+    <section class="expediency">
+        <br><br>
+        <h1 class="heading">Benefits for your expediency</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="inbox">
+                    <div class="icon" style="background-color: #EEEBFF;">
+                        <img src="Icons/payment.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="name">Payment Method</h4>
+                        <p class="des">We offer flexible <br> options, to make easier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inbox">
+                    <div class="icon" style="background-color: #FFF4E7;">
+                        <img src="Icons/return.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="name">Return policy</h4>
+                        <p class="des">You can return a <br> within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="inbox">
+                    <div class="icon" style="background-color: #CAF3E5;">
+                        <img src="Icons/customer.png" alt="">
+                    </div>
+                    <div>
+                        <h4 class="name">Customer Support</h4>
+                        <p class="des">Our customer support <br> is 24/7.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- BENIFITS FOR YOUR EXPEDIENCY END -->
+
+    <!-- TESTIMONIALS START -->
+    <section class="testimonials">
+        <h1 class="heading">Testimonials</h1>
+        <p class="headpara">Over 15,000 happy customers.</p>
+        <div class="container">
+            <div class="left">
+                <img class="quote" src="Icons/quote.png" alt="">
+                <img class="square" src="Images/square.jpg" alt="">
+            </div>
+            <div class="center">
+                <p class="des">
+                    “My experience with Mark is a complete
+                    sucess, from customer service, wide range of
+                    products, clean store, purchasing experience, the
+                    newsletter. Thank you.”
+                </p>
+                <h3 class="head">Leona Paul</h3>
+                <p class="title">CEO of Floatcom</p>
+            </div>
+            <div class="right">
+                <button class="first"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="second"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+        <div class="review">
+            <span>Reviews &ThickSpace; <img src="Icons/arrow_right_blue.png" alt=""> </span>
+        </div>
+    </section>
+    <!-- TESTIMONIALS END -->
+
+    <!-- NEWS LETTER START -->
+
+    <section class="newsletter">
+        <div class="container">
+            <div class="left">
+                <img src="Images/newLetter.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1 class="normal">Join Our <br> <span class="bold">Newsletter</span> </h1>
+                <p>Receive exclusive deals, discounts and many offers.</p>
+                <input type="email" name="" id="" placeholder="Enter your email">
+                <div>
+                    <a href="#" class="btn w3-container">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS LETTER END -->
+
+    <!-- FOOTER START -->
+    <section class="footer">
+        <div class="container-box">
+
+            <div class="box">
+                <div class="inbox-logo">
+                    <a href="#"> <img class="logo" src="Icons/Logo_1.png" alt=""></a>
+                </div>
+                <div class="icon">
+                    <a class="social" href="#"><img class="icons" src="Icons/Facebook.png" alt=""></a>
+                    <a class="social" href="#"><img class="icons" src="Icons/Instagram.png" alt=""></a>
+                    <a class="social" href="#"><img class="icons" src="Icons/linkedin.png" alt=""></a>
+                    <a class="social" href="#"><img class="icons" src="Icons/global.png" alt=""></a>
+                    <a class="social" href="#"><img class="icons" src="Icons/twitter.png" alt=""></a>
+                </div>
+                <h3>Address</h3>
+                <p>+123 654 987 <br>
+                    877 The Bronx, NY <br>
+                    14568, USA</p>
+            </div>
+
+            <div class="box">
+                <h3>My Account</h3>
+                <a href="#">Sign in</a>
+                <a href="#">Register</a>
+                <a href="#">Order status</a>
+            </div>
+
+            <div class="box">
+                <h3>Help</h3>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Sizing</a>
+            </div>
+
+            <div class="box">
+                <h3>Shop</h3>
+                <a href="#">All Products</a>
+                <a href="#">Bedroom</a>
+                <a href="#">Dinning Room</a>
+            </div>
+
+            <div class="box">
+                <h3>Legal Stuff</h3>
+                <a href="#">Shipping &amp; Delivery</a>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Privacy &amp; Policy</a>
+            </div>
+
+        </div>
+        <p class="copyright">Copyright ©2020 INWOOD. All Rights Reserved</p>
+    </section>
+    <!-- FOOTER END -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
