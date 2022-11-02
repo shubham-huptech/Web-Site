@@ -1,3 +1,4 @@
+// work on propular products carousel 
 $("#popular-products").owlCarousel({
   responsive: {
     0: {
@@ -15,6 +16,7 @@ $("#popular-products").owlCarousel({
   },
 });
 
+// below the explore carousel 
 $("#explore").owlCarousel({
   loop: true,
   nav: true,
